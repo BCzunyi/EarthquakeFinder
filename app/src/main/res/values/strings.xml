@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EarthquakeFinder</string>
+
+    <string name="map">Map</string>
+    <string name="action_about">About</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="app_descrip">Search for recent earthquakes around a location.</string>
+    <string name="app_credits">Earthquake data courtesy of Natural Resources Canada. http://www.earthquakescanada.nrcan.gc.ca/api/earthquakes/</string>
+</resources>

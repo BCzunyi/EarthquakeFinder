@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+
+    android:padding="6dip">
+    <!-- Time -->
+    <TextView
+        android:id="@+id/timeText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="Time: " />
+
+    <!-- Actual Time Data -->
+    <TextView
+        android:id="@+id/timeData"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/timeText" />
+
+    <!-- Location Tag -->
+    <TextView
+        android:id="@+id/locText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_below="@+id/timeText"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="Location: " />
+
+    <!-- Actual Location Data -->
+    <TextView
+        android:id="@+id/locData"
+
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+
+        android:gravity="center_vertical"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignBaseline="@+id/locText"
+        android:layout_alignBottom="@+id/locText"
+        android:layout_toEndOf="@+id/locText" />
+
+    <!-- Coordinate Tag -->
+    <TextView
+        android:id="@+id/coordText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_below="@+id/locText"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="Coords: " />
+
+    <!-- Actual Coordinate Data -->
+    <TextView
+        android:id="@+id/coordData"
+
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+
+        android:gravity="center_vertical"
+        android:layout_below="@+id/locData"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignBaseline="@+id/coordText"
+        android:layout_alignBottom="@+id/coordText"
+        android:layout_toEndOf="@+id/coordText" />
+
+    <!-- Depth Tag -->
+    <TextView
+        android:id="@+id/depthText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_below="@+id/coordText"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="Depth: " />
+
+    <!-- Actual Depth Data -->
+    <TextView
+        android:id="@+id/depthData"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:gravity="center_vertical"
+        android:layout_below="@+id/coordData"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignBaseline="@+id/depthText"
+        android:layout_alignBottom="@+id/depthText"
+        android:layout_toEndOf="@+id/depthText" />
+
+    <!-- Magnitude Tag -->
+    <TextView
+        android:id="@+id/magText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_below="@+id/coordData"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignBaseline="@+id/depthData"
+        android:layout_alignBottom="@+id/depthData"
+        android:layout_toEndOf="@+id/depthData"
+        android:paddingLeft="10px"
+        android:text="Magnitude: " />
+
+    <!-- Actual Magnitude Data -->
+    <TextView
+        android:id="@+id/magData"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:gravity="center_vertical"
+        android:layout_below="@+id/coordData"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignBaseline="@+id/magText"
+        android:layout_alignBottom="@+id/magText"
+        android:layout_toEndOf="@+id/magText" />
+</RelativeLayout>
